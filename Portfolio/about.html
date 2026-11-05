@@ -3,17 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About — Neelam Likhitha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="about-page">
-    <header>
+    <header class="site-header">
         <h1>Neelam Likhitha</h1>
-        <p>Final Year B.Tech Student | Aspiring Software Engineer</p>
+        <p>Aspiring Software Engineer</p>
     </header>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html" aria-current="page">About</a></li>
@@ -23,31 +24,109 @@
         </ul>
     </nav>
 
-    <main>
-        <section class="about">
-            <img src="Images/MY PICTURE.jpg" alt="Profile Photo">
-            <h2>About Me</h2>
-            <p>
-                I am a final-year B.Tech student with a strong foundation in Python, web development, and backend
-                systems.I enjoy building real-world applications that solve social and practical problems.
-                Currently seeking an entry-level software engineering role where I can contribute and grow.
-            </p>
+    <main class="page-shell">
+        <section class="about-intro">
+            <div class="about-photo-wrap">
+                <img class="about-profile-photo" src="Images/profile-new.png"
+                    alt="Neelam Likhitha - Profile Photo">
+                <button class="about-photo-edit" type="button" aria-label="Change profile photo">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 8.5h3l1.5-2h7l1.5 2h3v10H4v-10Z"></path>
+                        <circle cx="12" cy="13.5" r="3.2"></circle>
+                    </svg>
+                </button>
+                <input class="about-photo-input" type="file" accept="image/png,image/jpeg,image/webp"
+                    aria-label="Choose a new profile photo">
+                <p class="about-photo-status" role="status" aria-live="polite"></p>
+            </div>
+            <div class="about-intro-copy">
+                <p class="about-eyebrow">Get to know me</p>
+                <h2>About Me</h2>
+                <p class="about-subtitle">Aspiring Software Engineer <span aria-hidden="true">|</span> Python Developer</p>
+                <p class="about-description">I am a B.Tech graduate with knowledge of Python, web development, and
+                    backend systems. I enjoy building real-world applications that solve practical problems and make
+                    everyday tasks easier. I am looking for an entry-level Software Engineering opportunity where I
+                    can contribute, learn, and grow.</p>
+                <div class="about-actions">
+                    <a class="btn" href="projects.html">View My Projects</a>
+                    <a class="btn btn-outline" href="contact.html">Contact Me</a>
+                </div>
+            </div>
         </section>
 
-        <section class="tech-section">
-            <div class="tech-badges">
-                <span class="badge">HTML5</span>
-                <span class="badge">CSS3</span>
-                <span class="badge">Responsive Design</span>
-                <span class="badge">Git &amp; GitHub</span>
-                <span class="badge">Accessibility Basics</span>
+        <section class="about-info-grid" aria-label="Education and technical interests">
+            <article class="about-glass-card about-education-card">
+                <h3>
+                    <span class="skill-icon about-line-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="m2 9 10-5 10 5-10 5L2 9Z"></path>
+                            <path d="M6 11v5c3.5 2.7 8.5 2.7 12 0v-5M22 9v6"></path>
+                        </svg>
+                    </span>
+                    Education
+                </h3>
+                <dl class="about-education-list">
+                    <div>
+                        <dt>Degree</dt>
+                        <dd>Bachelor of Technology</dd>
+                    </div>
+                    <div>
+                        <dt>Academic Status</dt>
+                        <dd>Final Year</dd>
+                    </div>
+                    <div>
+                        <dt>College</dt>
+                        <dd>Gouthami Institute Of Technology And Management For Women</dd>
+                    </div>
+                    <div>
+                        <dt>Graduation Year</dt>
+                        <dd>2026</dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="about-glass-card">
+                <h3>Technical Interests</h3>
+                <div class="about-badges">
+                    <span class="about-badge">Application Development</span>
+                    <span class="about-badge">Web Development</span>
+                    <span class="about-badge">Problem Solving</span>
+                    <span class="about-badge">Database Management</span>
+                    <span class="about-badge">AI &amp; Computer Vision</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="about-glass-card about-objective-card">
+            <h3>
+                <span class="skill-icon about-line-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="9"></circle>
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <path d="m16.5 7.5 4-4M17 3.5h3.5V7"></path>
+                    </svg>
+                </span>
+                Career Objective
+            </h3>
+            <p>To begin my career as a Software Engineer, contribute to innovative projects, apply my technical
+                knowledge, and continuously grow through real-world development experience.</p>
+        </section>
+
+        <section class="about-skills-section">
+            <h2>What I Bring to the Table</h2>
+            <div class="about-badges">
+                <span class="about-badge">HTML5</span>
+                <span class="about-badge">CSS3</span>
+                <span class="about-badge">Python</span>
+                <span class="about-badge">Git &amp; GitHub</span>
+                <span class="about-badge">Responsive Design</span>
+                <span class="about-badge">Backend Development</span>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Neelam Likhitha</p>
-    </footer>
+    <script src="about-photo.js" defer></script>
 </body>
 
 </html>

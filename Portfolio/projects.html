@@ -3,17 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects — Neelam Likhitha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="projects-page">
-    <header>
+<body>
+    <header class="site-header">
         <h1>Neelam Likhitha</h1>
-        <p>Final Year B.Tech Student | Aspiring Software Engineer</p>
+        <p>Aspiring Software Engineer</p>
     </header>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -23,90 +24,132 @@
         </ul>
     </nav>
 
-    <main>
-        <section class="projects">
+    <main class="page-shell">
+        <section>
             <h2>Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-card-image">
+                        <img src="Images/financial-transaction-anomaly-detection.png" alt="Financial transaction streams being analyzed for anomalies">
+                    </div>
+                    <div class="project-card-content">
+                        <h3>Unsupervised Anomaly Detection in Financial Transactions</h3>
+                        <p>An intelligent financial transaction monitoring system that uses Isolation Forest, an unsupervised machine learning algorithm, to detect unusual transactions and identify potential financial risks.</p>
+                        <div class="chip-list">
+                            <span class="chip">React</span><span class="chip">Vite</span><span class="chip">Material UI</span><span class="chip">Node.js</span><span class="chip">Express.js</span><span class="chip">PostgreSQL</span><span class="chip">Machine Learning</span><span class="chip">Isolation Forest</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn" href="https://github.com/neelamlikitha/Unsupervised-Learning-For-Anamoly-Detection-In-Financial-Transactions" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <button class="btn btn-outline btn-unavailable" type="button" disabled title="No live demo is available">Live Demo unavailable</button>
+                        </div>
+                    </div>
+                </article>
 
-            <div class="project">
-                <img src="Images/digital image.jpeg" alt="Digital Governance">
-                <h3>Digital Governance &amp; Justice Application</h3>
-                <p>
-                    A web-based system that enables users to access legal information,
-                    file cases online, and track case status digitally.
-                </p>
-                <p class="tech-list"><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python</p>
-                <a href="project-digital.html" class="btn view-project">View Project</a>
-                <a href="https://github.com/neelamlikitha/Digital-Solutions-For-Good-Governance-And-justice.git"
-                    target="_blank" class="btn">View Code</a>
-            </div>
+                <article class="project-card">
+                    <a class="project-card-image" href="project-digital.html" aria-label="Digital Governance and Justice details">
+                        <img src="Images/digital image.jpeg" alt="Digital Governance and Justice project">
+                    </a>
+                    <div class="project-card-content">
+                        <h3><a href="project-digital.html">Digital Governance &amp; Justice</a></h3>
+                        <p>A web-based system to access legal information, file cases, and track case status digitally.</p>
+                        <div class="chip-list">
+                            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Python</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn" href="https://github.com/neelamlikitha/Digital-Solutions-For-Good-Governance-And-justice" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <button class="btn btn-outline btn-unavailable" type="button" disabled title="No live demo is available">Live Demo unavailable</button>
+                        </div>
+                    </div>
+                </article>
 
-            <div class="project">
-                <img src="Images/food waste image.jpg" alt="Waste Food">
-                <h3>Waste Food Management System</h3>
-                <p>
-                    A Flask-based platform that collects surplus food from restaurants
-                    and redistributes it to NGOs to reduce food waste.
-                </p>
-                <p class="tech-list"><strong>Technologies used:</strong> Flask, Python, MongoDB, HTML/CSS</p>
-                <a href="project-waste-food.html" class="btn view-project">View Project</a>
-                <a href="https://github.com/neelamlikitha/Street-Food---Hub-.git" target="_blank" class="btn">View
-                    Code</a>
-            </div>
+                <article class="project-card">
+                    <a class="project-card-image" href="project-waste-food.html" aria-label="Waste Food Management details">
+                        <img src="Images/food waste image.jpg" alt="Waste Food Management project">
+                    </a>
+                    <div class="project-card-content">
+                        <h3><a href="project-waste-food.html">Waste Food Management</a></h3>
+                        <p>A Flask platform that redistributes surplus food from restaurants to NGOs and communities.</p>
+                        <div class="chip-list">
+                            <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">MongoDB</span><span class="chip">HTML</span><span class="chip">CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn" href="https://github.com/neelamlikitha/Street-Food---Hub-" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <button class="btn btn-outline btn-unavailable" type="button" disabled title="No live demo is available">Live Demo unavailable</button>
+                        </div>
+                    </div>
+                </article>
 
-            <div class="project">
-                <img src="Images/student management sysytem image.jpeg" alt="Student Management">
-                <h3>Student Management Statement</h3>
-                <p>
-                    Student Management System is a web-based application designed to manage student information
-                    digitally.
-                </p>
-                <p class="tech-list"><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python</p>
-                <a href="project-student-management.html" class="btn view-project">View Project</a>
-                <a href="https://github.com/neelamlikitha/IIT-student-management.git" target="_blank" class="btn">View
-                    Code</a>
-            </div>
-              <div class="project">
-                <img src="Images/facial emotion recognization.jpg" alt="Facial Emotion Recognition">
-                <h3>Facial Emotion Recognition</h3>
-                <p>
-                    AI-powered real-time facial emotion recognition system using OpenCV and DeepFace for
-                    analyzing human emotions in interactive and behavioral applications.
-                </p>
-                <p class="tech-list"><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python</p>
-                <a href="project-Facial-Emotion-Recognition.html" class="btn view-project">View Project</a>
-                <a href="https://github.com/neelamlikitha/Facial-Emotion-Recognition.git" target="_blank"
-                    class="btn">ViewCode</a>
-            </div>
-            <div class="project">
-                <img src="Images/moving object detection.jpg" alt="Moving Object Detection">
-                <h3>Moving Object Detection</h3>
-                <p>
-                    AI-powered real-time moving object detection system using OpenCV and Deep Learning for
-                    analyzing human emotions in interactive and behavioral applications.
-                </p>
-                <p class="tech-list"><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python</p>
-                <a href="project-Moving-Object-Detection.html" class="btn view-project">View Project</a>
-                <a href="https://github.com/neelamlikitha/Moving-Object-Detection-opencv" target="_blank"
-                    class="btn">ViewCode</a>
-            </div>
-            <div class="project">
-                <img src="Images/sentiment analysis.jpg" alt="Sentiment Analysis">
-                <h3>Sentiment Analysis</h3>
-                <p>
-                    Machine learning-based sentiment analysis system for analyzing user opinions and feedback.
-                </p>
-                <p class="tech-list"><strong>Technologies used:</strong> HTML, CSS, JavaScript, Python</p>
-                <a href="project-Sentiment-Analysis.html" class="btn view-project">View Project</a>
-                <a href="https://github.com/neelamlikitha/IIT-sentiment-analysis.git" target="_blank"
-                    class="btn">ViewCode</a>
-            </div>
+                <article class="project-card">
+                    <a class="project-card-image" href="project-student-management.html" aria-label="Student Management details">
+                        <img src="Images/student management sysytem image.jpeg" alt="Student Management project">
+                    </a>
+                    <div class="project-card-content">
+                        <h3><a href="project-student-management.html">Student Management System</a></h3>
+                        <p>A web application for managing student records, attendance, marks, and course information.</p>
+                        <div class="chip-list">
+                            <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Python</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn" href="https://github.com/neelamlikitha/IIT-student-management" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <button class="btn btn-outline btn-unavailable" type="button" disabled title="No live demo is available">Live Demo unavailable</button>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="project-card">
+                    <a class="project-card-image" href="project-facial-emotion-recognition.html" aria-label="Facial Emotion Recognition details">
+                        <img src="Images/facial emotion recognization.jpg" alt="Facial Emotion Recognition project">
+                    </a>
+                    <div class="project-card-content">
+                        <h3><a href="project-facial-emotion-recognition.html">Facial Emotion Recognition</a></h3>
+                        <p>A real-time facial emotion recognition project using computer vision and AI tools.</p>
+                        <div class="chip-list">
+                            <span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">DeepFace</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn" href="https://github.com/neelamlikitha/Facial-Emotion-Recognition" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <button class="btn btn-outline btn-unavailable" type="button" disabled title="No live demo is available">Live Demo unavailable</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <a class="project-card-image" href="project-moving-object-detection.html" aria-label="Moving Object Detection details">
+                        <img src="Images/moving object detection.jpg" alt="Moving Object Detection project">
+                    </a>
+                    <div class="project-card-content">
+                        <h3><a href="project-moving-object-detection.html">Moving Object Detection</a></h3>
+                        <p>A computer vision project that detects moving objects in video using OpenCV and deep learning.</p>
+                        <div class="chip-list">
+                            <span class="chip">Python</span><span class="chip">OpenCV</span><span class="chip">Deep Learning</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn" href="https://github.com/neelamlikitha/Moving-Object-Detection-opencv" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <button class="btn btn-outline btn-unavailable" type="button" disabled title="No live demo is available">Live Demo unavailable</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <a class="project-card-image" href="project-sentiment-analysis.html" aria-label="Sentiment Analysis details">
+                        <img src="Images/sentiment analysis.jpg" alt="Sentiment Analysis project">
+                    </a>
+                    <div class="project-card-content">
+                        <h3><a href="project-sentiment-analysis.html">Sentiment Analysis</a></h3>
+                        <p>A machine-learning project that analyzes text to identify sentiment and user feedback.</p>
+                        <div class="chip-list">
+                            <span class="chip">Python</span><span class="chip">NLTK</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn" href="https://github.com/neelamlikitha/IIT-sentiment-analysis" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <button class="btn btn-outline btn-unavailable" type="button" disabled title="No live demo is available">Live Demo unavailable</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2026 Neelam Likhitha</p>
-    </footer>
 </body>
 
 </html>
