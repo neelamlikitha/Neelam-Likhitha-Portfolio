@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Preview or download Neelam Likhitha's resume.">
-    <title>My Resume — Neelam Likhitha</title>
+    <meta name="description"
+        content="Resume of Neelam Likhitha, aspiring software engineer with experience in web development, data workflows, and application development.">
+    <title>Resume — Neelam Likhitha</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -25,33 +26,257 @@
         </ul>
     </nav>
 
-    <main class="page-shell">
-        <section class="resume-content">
-            <div class="resume-heading">
-                <div>
-                    <h2>My Resume</h2>
-                    <p>Preview my resume below or download a copy.</p>
-                </div>
+    <main class="page-shell resume-layout">
+        <section class="resume-profile" aria-labelledby="resume-name">
+            <div class="resume-profile-copy">
+                <p class="eyebrow">Software engineering · Data-focused development</p>
+                <h2 id="resume-name">Neelam Likhitha</h2>
+                <p class="resume-role">Aspiring Software Engineer</p>
+                <p class="resume-intro">Computer Science graduate with hands-on experience in Python, SQL, data
+                    processing, and full-stack development. Interested in building automation-led applications and
+                    reliable data workflows.</p>
                 <div class="resume-actions">
-                    <a class="btn" href="resume.pdf" download="Neelam_Likhitha_Resume.pdf">Download Resume</a>
-                    <a class="btn btn-outline" href="resume.pdf" target="_blank" rel="noopener">Open in New Tab</a>
-                    <a class="resume-back-link" href="index.html">Back to Home</a>
+                    <a class="btn" href="resume.pdf" download="Neelam_Likhitha_Resume.pdf">
+                        Download Resume <span aria-hidden="true">↓</span>
+                    </a>
+                    <a class="btn btn-outline resume-pdf-link" href="resume.pdf" target="_blank" rel="noopener">
+                        View Full Resume <span aria-hidden="true">↗</span>
+                    </a>
                 </div>
             </div>
+            <address class="resume-contact" aria-label="Contact details">
+                <a href="mailto:likitha0612@gmail.com">
+                    <span class="resume-contact-label">Email</span>
+                    likitha0612@gmail.com
+                </a>
+                <a href="tel:8790496135">
+                    <span class="resume-contact-label">Phone</span>
+                    8790496135
+                </a>
+                <a href="https://www.linkedin.com/in/neelam-likhitha-2a74a3296" target="_blank"
+                    rel="noopener noreferrer">
+                    <span class="resume-contact-label">LinkedIn</span>
+                    Connect
+                </a>
+                <a href="https://github.com/neelamlikitha" target="_blank" rel="noopener noreferrer">
+                    <span class="resume-contact-label">GitHub</span>
+                    Projects
+                </a>
+            </address>
+        </section>
 
-            <div class="resume-viewer-card">
-                <iframe src="resume.pdf#toolbar=1&amp;navpanes=1&amp;view=FitH"
-                    title="Neelam Likhitha Resume" allow="fullscreen">
-                    Your browser can't display the PDF here. Please use the Download Resume button above.
-                </iframe>
+        <section class="resume-section" aria-labelledby="summary-title">
+            <div class="resume-section-heading">
+                <p class="eyebrow">Profile</p>
+                <h2 id="summary-title">Professional Summary</h2>
             </div>
-
-            <div class="resume-mobile-card">
-                <p>Tap below to view or download my resume</p>
-                <a class="btn" href="resume.pdf" download="Neelam_Likhitha_Resume.pdf">Download Resume</a>
-                <a class="btn btn-outline" href="resume.pdf" target="_blank" rel="noopener">Open in New Tab</a>
+            <div class="resume-summary-card">
+                <p>Foundations in Python, SQL, and data processing, with experience building ETL workflows, cleaning
+                    and transforming structured datasets, and developing automation-driven solutions. Seeking an
+                    entry-level Data Engineer role to develop scalable data pipelines and support data-driven
+                    decision-making.</p>
             </div>
         </section>
+
+        <section class="resume-section" aria-labelledby="skills-title">
+            <div class="resume-section-heading">
+                <p class="eyebrow">Technical toolkit</p>
+                <h2 id="skills-title">Technical Skills</h2>
+            </div>
+            <div class="resume-skill-grid">
+                <article class="resume-card resume-skill-card">
+                    <h3>Programming Languages</h3>
+                    <p>Python, SQL, JavaScript</p>
+                </article>
+                <article class="resume-card resume-skill-card">
+                    <h3>Frontend Development</h3>
+                    <p>HTML, CSS, React.js, Tailwind CSS, Redux Toolkit, responsive design</p>
+                </article>
+                <article class="resume-card resume-skill-card">
+                    <h3>Backend &amp; Databases</h3>
+                    <p>Flask, Node.js, Express.js, PostgreSQL, MongoDB, REST APIs, JWT</p>
+                </article>
+                <article class="resume-card resume-skill-card">
+                    <h3>AI &amp; Computer Vision</h3>
+                    <p>TensorFlow, PyTorch, OpenCV, DeepFace, NLTK, deep learning</p>
+                </article>
+                <article class="resume-card resume-skill-card">
+                    <h3>Data &amp; Analytics</h3>
+                    <p>Pandas, NumPy, Power BI, advanced Excel, pivot tables, VLOOKUP, Matplotlib, ETL concepts, data
+                        analysis and reporting, CSV/Excel data storage, workflow automation</p>
+                </article>
+                <article class="resume-card resume-skill-card">
+                    <h3>Tools &amp; Platforms</h3>
+                    <p>Git (basic), GitHub, VS Code, Microsoft Word, Cloudinary, Docker, k6, Lighthouse, Render, Neon</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="resume-section" aria-labelledby="experience-title">
+            <div class="resume-section-heading">
+                <p class="eyebrow">Professional experience</p>
+                <h2 id="experience-title">Experience</h2>
+            </div>
+            <div class="resume-timeline">
+                <article class="resume-timeline-item">
+                    <div class="resume-timeline-meta">
+                        <h3>Software Development Engineer Intern</h3>
+                        <p>SHNOOR International LLC</p>
+                        <time datetime="2026-07">July 2026 – October 2026</time>
+                    </div>
+                    <ul>
+                        <li>Contributed to full-stack HRMS development using React.js, Node.js, Express.js, and
+                            PostgreSQL across employee, manager, and admin workflows.</li>
+                        <li>Worked on role-based email routing and notifications, HRMS modules, and collaborative
+                            Git/GitHub workflows including pull requests and code reviews.</li>
+                    </ul>
+                </article>
+                <article class="resume-timeline-item">
+                    <div class="resume-timeline-meta">
+                        <h3>Internship — Exploring the Power of GenAI</h3>
+                        <p>NextHub Technologies</p>
+                        <time datetime="2025-05">May 2025 – July 2025</time>
+                    </div>
+                    <ul>
+                        <li>Built Autoencoders and Variational Autoencoders in Python and TensorFlow for dimensionality
+                            reduction, using preprocessing workflows on the MNIST dataset.</li>
+                        <li>Visualized latent spaces with Matplotlib and applied structured data storage techniques for
+                            analysis.</li>
+                    </ul>
+                </article>
+                <article class="resume-timeline-item">
+                    <div class="resume-timeline-meta">
+                        <h3>Front-End Web Development Intern</h3>
+                        <p>Raise Digital</p>
+                        <time datetime="2024-02">February 2024 – June 2024</time>
+                    </div>
+                    <ul>
+                        <li>Developed a responsive portfolio website using HTML, CSS, and JavaScript, focusing on
+                            cross-device compatibility, clear navigation, version control, and basic deployment.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="resume-section" aria-labelledby="education-title">
+            <div class="resume-section-heading">
+                <p class="eyebrow">Academic background</p>
+                <h2 id="education-title">Education</h2>
+            </div>
+            <div class="resume-timeline resume-education">
+                <article class="resume-timeline-item">
+                    <div class="resume-timeline-meta">
+                        <h3>B.Tech — Computer Science and Engineering</h3>
+                        <p>Gouthami Institute of Technology and Management for Women</p>
+                        <time datetime="2022">2022 – 2026</time>
+                    </div>
+                    <p class="resume-result">CGPA: 7.8</p>
+                </article>
+                <article class="resume-timeline-item">
+                    <div class="resume-timeline-meta">
+                        <h3>Intermediate — MPC</h3>
+                        <p>JMJ Junior College</p>
+                        <time datetime="2020">2020 – 2022</time>
+                    </div>
+                    <p class="resume-result">Percentage: 75.0</p>
+                </article>
+                <article class="resume-timeline-item">
+                    <div class="resume-timeline-meta">
+                        <h3>SSC — BSEAP</h3>
+                        <p>ZPHS High School</p>
+                        <time datetime="2019">2019 – 2020</time>
+                    </div>
+                    <p class="resume-result">GPA: 9</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="resume-section" aria-labelledby="projects-title">
+            <div class="resume-section-heading">
+                <p class="eyebrow">Selected work</p>
+                <h2 id="projects-title">Projects</h2>
+            </div>
+            <div class="resume-project-grid">
+                <article class="resume-card resume-project-card">
+                    <h3>Personal Portfolio Website</h3>
+                    <p>Designed and developed a responsive portfolio with About, Skills, Projects, Resume, and Contact
+                        sections to showcase my profile, work, achievements, and resume. Includes GitHub project links
+                        and resume download/view actions, and is deployed with GitHub Pages.</p>
+                    <a href="https://github.com/neelamlikitha/Neelam-Likhitha-Portfolio" target="_blank"
+                        rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="resume-card resume-project-card">
+                    <h3>Unsupervised Anomaly Detection in Financial Transactions</h3>
+                    <p>Built a full-stack monitoring application using Isolation Forest, with user and admin dashboards,
+                        anomaly scores, and risk classification.</p>
+                    <a href="https://github.com/neelamlikitha/Unsupervised-Learning-For-Anamoly-Detection-In-Financial-Transactions"
+                        target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="resume-card resume-project-card">
+                    <h3>Digital Solutions for Good Governance and Justice</h3>
+                    <p>Developed a web-based governance platform with a Flask and MongoDB backend for digital service
+                        delivery, data handling, and workflow management.</p>
+                    <a href="https://github.com/neelamlikitha/Digital-Solutions-For-Good-Governance-And-justice"
+                        target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="resume-card resume-project-card">
+                    <h3>Latent Space Representation using Autoencoders &amp; Variational Autoencoders</h3>
+                    <p>Implemented Autoencoders and Variational Autoencoders to learn and visualize latent
+                        representations.</p>
+                    <a href="https://github.com/neelamlikitha/Latent-Space-Representation-for-AE-and-VAEn"
+                        target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="resume-card resume-project-card">
+                    <h3>Waste Food Management — Street Food Hub</h3>
+                    <p>Developed a role-based platform connecting food vendors and suppliers through dedicated
+                        dashboards for surplus-food redistribution. Built with Flask, Python, MongoDB, HTML, and CSS.</p>
+                    <a href="https://github.com/neelamlikitha/Street-Food---Hub-" target="_blank"
+                        rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="resume-card resume-project-card">
+                    <h3>Student Management System</h3>
+                    <p>Web application for managing student information, including attendance, marks, and course data.
+                        Built with HTML, CSS, JavaScript, and Python.</p>
+                    <a href="https://github.com/neelamlikitha/IIT-student-management" target="_blank"
+                        rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="resume-card resume-project-card">
+                    <h3>Facial Emotion Recognition</h3>
+                    <p>Developed a real-time facial emotion recognition application in Python using OpenCV and DeepFace.</p>
+                    <a href="https://github.com/neelamlikitha/Facial-Emotion-Recognition" target="_blank"
+                        rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="resume-card resume-project-card">
+                    <h3>Moving Object Detection using OpenCV</h3>
+                    <p>Built a computer vision system in Python using OpenCV to detect moving objects in video.</p>
+                    <a href="https://github.com/neelamlikitha/Moving-Object-Detection-opencv" target="_blank"
+                        rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="resume-card resume-project-card">
+                    <h3>Sentiment Analysis</h3>
+                    <p>Created an interactive text demo that classifies sentiment as positive, negative, or neutral,
+                        using Python and NLTK.</p>
+                    <a href="https://github.com/neelamlikitha/IIT-sentiment-analysis" target="_blank"
+                        rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+        </section>
+
+        <section class="resume-section" aria-labelledby="certifications-title">
+            <div class="resume-section-heading">
+                <p class="eyebrow">Recognition</p>
+                <h2 id="certifications-title">Certifications &amp; Achievements</h2>
+            </div>
+            <article class="resume-card resume-recognition-card">
+                <div>
+                    <h3>Digital Solutions for Good Governance</h3>
+                    <p>Brain O Vision</p>
+                </div>
+                <p>Developed a digital solutions platform using HTML, CSS, JavaScript, Flask, and MongoDB to support
+                    technology-driven governance and justice services.</p>
+            </article>
+        </section>
+
     </main>
 </body>
 
